@@ -1,0 +1,35 @@
+Marvell firmware blocks
+
+############ Header located at file offset 0xC0000 ##################
+     Magic          Magic           Timestamp     # of Segments  Entry Address
+ 4D 52 56 4C  |  7B F1 9C 2E   |   8C DE 15 00   | 00 00 0A 48 | 00 30 00 44  |
+Segment identifiers don't match! Entire block listed below.
+4D 52 56 4C 7B F1 9C 2E 8C DE 15 00 00 00 0A 48 00 30 00 44
+34 B2 01 20 00 F0 15 00 A0 DE 15 00 38 B2 01 20 F8 B5 0C 4D
+2B 68 07 46 0E 46 14 46 23 B9 03 20 00 F0 90 FE 01 23 2B 60
+00 F0 A0 FE 00 F0 96 FE 38 46 31 46 00 F0 A2 FE 14 B1 A0 42
+
+############ Header located at file offset 0xC0000 ##################
+     Magic          Magic           Timestamp     # of Segments  Entry Address
+ 4D 52 56 4C  |  7B F1 9C 2E   |   00 00 00 00   | 03 00 00 00 | B1 28 00 1F  |
+
+Segment Magic | Offset in file | Size of segment | Mem Address |   Checksum   |
+ 02 00 00 00  |  C8 00 00 00   |   E8 27 00 00   | 00 00 10 00 |  7E 18 84 7C | Offset 0xC8 is all 00
+                    0xC8              0x27E8        0x100000
+ 02 00 00 00  |  B0 28 00 00   |   38 48 08 00   | B0 28 00 1F |  12 98 CB E2 |
+                    0x28B0            0x84838       0x1F0028B0
+ 02 00 00 00  |  E8 70 08 00   |   24 1D 00 00   | 40 00 00 20 |  07 41 E1 7C |
+                    0x870E8           0x1D24        0x20000040
+
+############ Header located at file offset 0x342000 #################
+     Magic          Magic           Timestamp     # of Segments  Entry Address
+ 4D 52 56 4C  |  7B F1 9C 2E   |   C8 F2 E9 60   | 03 00 00 00 | B1 28 00 1F  |
+
+Segment Magic | Offset in file | Size of segment | Mem Address |   Checksum   |
+ 02 00 00 00  |  C8 00 00 00   |   E8 27 00 00   | 00 00 10 00 |  3F 1D F8 4E |
+                    0xC8              0x27E8        0x100000
+ 02 00 00 00  |  B0 28 00 00   |   D8 51 08 00   | B0 28 00 1F |  F5 2F CB BD |
+                    0x28B0            0x851D8       0x1F0028B0
+ 02 00 00 00  |  88 7A 08 00   |   2C 1D 00 00   | 40 00 00 20 |  C0 D4 50 F3 |
+                    0x87A88           0x1D2C        0x20000040
+ 

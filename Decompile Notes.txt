@@ -1,0 +1,42 @@
+Cortex-M4F application CPU for applications with integrated 512 KB SRAM and 128 KB mask ROM
+ARM Cortex-M4F, 32-bit
+Flash Controller with embedded 32 KB SRAM cache to support XIP from external SPI Flash
+The Boot ROM is located in memory from 0x00 to 0x7FFF.
+
+For Offset 0xC000 - Entry address is 0x1F0028B1
+For Offset 0x342000 - Entry Address is 
+
+Overall Memory Map
+Table 192: Overall Memory Map
+Register Block Register Name Base Address
+DMA DMAC Address Block 0x4400_0000
+USBC USBC Address Block 0x4400_1000
+FlashC Flash Controller Address Block 0x4400_3000
+AES AES Address Block 0x4400_4000
+CRC CRC Address Block 0x4400_5000
+I2C0 I2C Address Block 0x4600_0000
+QSPI QSPI Address Block 0x4601_0000
+SSP0 SSP Address Block 0x4602_0000
+UART0 UART Address Block 0x4604_0000
+GPIO GPIO Address Block 0x4606_0000
+GPT0 GPT Address Block 0x4607_0000
+GPT1 GPT Address Block 0x4608_0000
+-- Reserved 0x4609_0000
+RC32 RC32 Address Block 0x460A_0000
+ADC ADC Address Block 0x460B_0000
+DAC DAC Address Block 0x460B_0200
+ACOMP ACOMP Address Block 0x460B_0400
+UART1 UART Address Block 0x460C_0000
+SSP1 SSP Address Block 0x460D_0000
+SSP2 SSP Address Block 0x4800_0000
+Pin Mux PINMUX Address Block 0x4801_0000
+UART2 UART Address Block 0x4802_0000
+WDT WDT Address Block 0x4804_0000
+I2C1 I2C Address Block 0x4805_0000
+Reserved Reserved 0x4806_0000
+GPT2 GPT Address Block 0x4807_0000
+GPT3 GPT Address Block 0x4808_0000
+RTC RTC Address Block 0x4809_0000
+PMU PMU Address Block 0x480A_0000
+SYS_CTL System Control Address Block 0x480B_0000
+4k_MEM 4k_MEM 0x480C_0000
